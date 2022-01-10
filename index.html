@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play PSDC Dance Self-Screening.</tw-noscript></noscript></tw-story>
-<tw-storydata name="PSDC Dance Self-Screening" startnode="5" creator="Twine" creator-version="2.3.15" ifid="1C43841B-527F-4BA2-A34B-16DDB9DEE69A" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/*Light Mode Dark Mode Toggle*/
+<tw-storydata name="PSDC Dance Self-Screening" startnode="5" creator="Twine" creator-version="2.3.16" ifid="1C43841B-527F-4BA2-A34B-16DDB9DEE69A" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/*Light Mode Dark Mode Toggle*/
 html.dark-mode tw-story {
 	background-color: black;
 	color: white;
@@ -17,6 +17,15 @@ html.dark-mode tw-story {
 html.light-mode tw-story {
 	background-color: white;
 	color: black;
+}
+
+
+/*Font Toggle*/
+html.font-default tw-passage {
+	font-size: auto;
+}
+html.font-smaller tw-passage {
+	font-size: 85%;
 }
 
 
@@ -76,13 +85,13 @@ tw-include[type="footer"] {
 div.smallest-font {
   font-size: 70%;
   line-height: 110%;
-  margin-bottom: -30px;
+  margin-bottom: -3%;
 }
 
 div.smaller-font {
   font-size: 87%;
   line-height: 120%;
-  margin-bottom: -30px;
+  margin-bottom: -3%;
 }
 
 .center-logo {
@@ -95,6 +104,10 @@ div.smaller-font {
 
 div.center-this {
   text-align: center;
+}
+
+div.bullet-space {
+  margin-top: -2%;
 }
 
 
@@ -225,25 +238,18 @@ tw-link.dropdown {
     height: auto;
   	width: auto;
     top: 0;
-    /*border-color: gray;
-    border-style: solid;
-    border-radius: 1px;
-    border-width: 1px;
-    padding: 0px;*/
-}
-
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Header" color="purple"></tw-tag>,<tw-tag name="header" color="purple"></tw-tag>,<tw-tag name="footer" color="purple"></tw-tag>,<tw-tag name="no-header" color="red"></tw-tag>,<tw-tag name="no-footer" color="red"></tw-tag><tw-passagedata pid="1" name="Vaccination Status" tags="" position="970.5,389" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Status&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Header" color="purple"></tw-tag>,<tw-tag name="header" color="purple"></tw-tag>,<tw-tag name="footer" color="purple"></tw-tag>,<tw-tag name="no-header" color="red"></tw-tag>,<tw-tag name="no-footer" color="red"></tw-tag><tw-passagedata pid="1" name="Vaccination Status" tags="" position="970.5,388" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Status&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 Are you vaccinated against COVID-19?
 (button:)[[Yes-&gt;Yes, I am vaccinated]]
-(button:)[[No-&gt;No, not vaccinated]]</tw-passagedata><tw-passagedata pid="2" name="Yes, I am vaccinated" tags="" position="973.5,539" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Status&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+(button:)[[No-&gt;No, not vaccinated]]</tw-passagedata><tw-passagedata pid="2" name="Yes, I am vaccinated" tags="" position="973.5,537" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Status&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//Yes, I&#39;m vaccinated.//&lt;/span&gt;
 
-Dancers must be fully vaccinated against COVID-19 to meet the guidelines to attend PSDC dances.
+Thank you for helping keep us all safer, so we can all have more fun!
 
-&lt;div class=&quot;smaller-font&quot;&gt;In consultation with experts, we are employing as many risk mitigation layers as possible, and requiring proof of vaccination is one of those layers.&lt;/div&gt;
+&lt;div class=&quot;smaller-font&quot;&gt;In consultation with experts, we are employing as many risk mitigation layers as possible, and requiring vaccination against COVID-19 is one of those layers.&lt;/div&gt;
 
 
 Which COVID-19 vaccine did you receive initially? 
@@ -255,26 +261,26 @@ Which COVID-19 vaccine did you receive initially?
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/science/science-briefs/fully-vaccinated-people.html&quot; target=&quot;_blank&quot;&gt;CDC&#39;s Vaccine Science Brief&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="3" name="No, I&#39;m not vaccinated" tags="" position="39.5,502" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Status&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/science/science-briefs/fully-vaccinated-people.html&quot; target=&quot;_blank&quot;&gt;CDC - Vaccine Science Brief&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="3" name="No, I&#39;m not vaccinated" tags="" position="39.5,502" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Status&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//I&#39;m not vaccinated.//&lt;/span&gt;
 
 
-We&#39;re sorry, at this time only dancers who have been fully vaccinated against COVID-19 meet the guidelines to attend PSDC dances.
+We&#39;re sorry, at this time only dancers who have been vaccinated against COVID-19 meet the guidelines to attend PSDC dances.
 
 &lt;div class=&quot;smaller-font&quot;&gt;In consultation with experts, we are employing as many risk mitigation layers as possible, and requiring proof of vaccination is one of those layers.&lt;/div&gt;
 &#39;&#39;We encourage you to talk to your primary care provider to see if vaccination is appropriate for you.&#39;&#39;
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/science/science-briefs/fully-vaccinated-people.html&quot; target=&quot;_blank&quot;&gt;CDC&#39;s Vaccine Science Brief&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="4" name="No, not vaccinated" tags="" position="817,465" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Status&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/science/science-briefs/fully-vaccinated-people.html&quot; target=&quot;_blank&quot;&gt;CDC - Vaccine Science Brief&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="4" name="No, not vaccinated" tags="" position="817,464" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Status&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//No, I&#39;m not vaccinated.//&lt;/span&gt;
 
 
-We&#39;re sorry, at this time only dancers who have been fully vaccinated against COVID-19 meet the guidelines to attend PSDC dances.
+We&#39;re sorry, at this time only dancers who have been vaccinated against COVID-19 meet the guidelines to attend PSDC dances.
 
 &lt;div class=&quot;smaller-font&quot;&gt;In consultation with experts, we are employing as many risk mitigation layers as possible, and requiring proof of vaccination is one of those layers.&lt;/div&gt;
 
@@ -284,7 +290,7 @@ We&#39;re sorry, at this time only dancers who have been fully vaccinated agains
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/science/science-briefs/fully-vaccinated-people.html&quot; target=&quot;_blank&quot;&gt;CDC&#39;s Vaccine Science Brief&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="5" name="Introduction" tags="" position="969,174" size="100,100">{&lt;div class=&quot;center-this&quot;&gt;(if: $theme is &#39;dark-mode&#39;)[(link: &#39;Enable Light Mode&#39;, (button:))[
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/science/science-briefs/fully-vaccinated-people.html&quot; target=&quot;_blank&quot;&gt;CDC - Vaccine Science Brief&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="5" name="Introduction" tags="" position="969,168" size="100,100">{&lt;div class=&quot;center-this&quot;&gt;(if: $theme is &#39;dark-mode&#39;)[(link: &#39;Enable Light Mode&#39;, (button:))[
 	(set: $theme to &quot;light-mode&quot;)
 	(display: &quot;Apply Theme&quot;)
 	(go-to: &quot;Introduction&quot;)
@@ -293,15 +299,26 @@ We&#39;re sorry, at this time only dancers who have been fully vaccinated agains
 	(set: $theme to &quot;dark-mode&quot;)
 	(display: &quot;Apply Theme&quot;)
 	(go-to: &quot;Introduction&quot;)
-]]&lt;/div&gt;}
+]](if: $FontSetting is &#39;font-default&#39;)[(link: &#39;Enable Smaller Font&#39;, (button:))[
+	(set: $FontSetting to &quot;font-smaller&quot;)
+	(display: &quot;Apply Font&quot;)
+	(go-to: &quot;Introduction&quot;)
+]]
+(if: $FontSetting is &#39;font-smaller&#39;)[(link: &#39;Enable Default Font&#39;, (button:))[
+	(set: $FontSetting to &quot;font-default&quot;)
+	(display: &quot;Apply Font&quot;)
+	(go-to: &quot;Introduction&quot;)
+]]&lt;/div&gt;
+}
 &lt;div class=&quot;center-this&quot;&gt;&lt;span style=&quot;font-size: 125%&quot;&gt;&#39;&#39;Welcome to PSDC&#39;s interactive self-screening!&#39;&#39;&lt;/span&gt;&lt;/div&gt;
 &lt;img src=http://www.portlandswing.org/wp-content/uploads/2021/12/PSDC-logo-Color-higher-res.png class=&quot;center-logo&quot;&gt;
 
-{With COVID-19 safety guidelines constantly needing to change, we&#39;re doing what we can to keep all of you safer, but we need your help. We offer this interactive tool to help you navigate our safety guidelines and do your part. This covers...&lt;div class=&quot;smaller-font&quot;&gt;
+{With COVID-19 safety guidelines constantly needing to change, we&#39;re doing what we can to keep all of you safer, but we also need &lt;i&gt;your&lt;/i&gt; help. We offer this interactive tool to help you navigate our safety guidelines and do your part. This covers...&lt;div class=&quot;smaller-font&quot;&gt;
+&lt;div class=&quot;bullet-space&quot;&gt;
 * Vaccination
 * Masks
 * Health Screening
-* Other Mitigation Layers
+* Other Mitigation Layers&lt;/div&gt;
 This self-screening tool works best if you use it shortly before attending our dance. Keeping our community safer is a team effort!
 &lt;br&gt;
 If you make a selection error or need to reset your responses for the next dance, use the Back and Reset buttons (respectively) in the header, instead of your browser&#39;s navigation.&lt;/div&gt;}
@@ -309,7 +326,7 @@ If you make a selection error or need to reset your responses for the next dance
 (button:)[[[[Start | Vaccination-&gt;Vaccination Status]]]]
 
 &lt;div class=&quot;smallest-font&quot;&gt;Privacy note: This interactive tool is anonymous and for your own personal use. The information is only for you and available to you, on your own device. It is not sent to us, stored externally, or distributed in any way. &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="6" name="Moderna Initial Vaccination" tags="" position="1669.5,765" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+</tw-passagedata><tw-passagedata pid="6" name="Moderna Initial Vaccination" tags="" position="1669.5,763" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 (set: $InitialType to &quot;Moderna&quot;)
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//Moderna initial vaccine//&lt;/span&gt;
@@ -322,8 +339,8 @@ How many doses of the Moderna vaccine have you received (excluding any boosters)
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html&quot; target=&quot;_blank&quot;&gt;CDC&#39;s Moderna Overview&lt;/a&gt;&lt;/span&gt;
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="7" name="Pfizer Initial Vaccination" tags="" position="912.5,758" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html&quot; target=&quot;_blank&quot;&gt;CDC - Moderna Overview&lt;/a&gt;&lt;/span&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="7" name="Pfizer Initial Vaccination" tags="" position="944.5,757" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 (set: $InitialType to &quot;Pfizer&quot;)
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//Pfizer-BioNTech initial vaccine//&lt;/span&gt;
@@ -336,23 +353,23 @@ How many doses of the Pfizer vaccine have you received (excluding any boosters)?
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html&quot; target=&quot;_blank&quot;&gt;CDC&#39;s Pfizer Overview&lt;/a&gt;&lt;/span&gt;
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="8" name="J&amp;J Initial Vaccination" tags="" position="310.5,889" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html&quot; target=&quot;_blank&quot;&gt;CDC - Pfizer Overview&lt;/a&gt;&lt;/span&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="8" name="J&amp;J Initial Vaccination" tags="" position="312.5,919" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 (set: $InitialType to &quot;J&amp;J&quot;)
 You answered:
-{&lt;span style=&#39;font-family: Arial&#39;&gt;//Johnson &amp; Johnson//&lt;/span&gt;
+{&lt;span style=&#39;font-family: Arial&#39;&gt;//Johnson &amp; Johnson//&lt;/span&gt;&lt;div class=&quot;smaller-font&quot;&gt;&lt;div class=&quot;bullet-space&quot;&gt;
 * Initially a 1-dose regimen
-* A booster after $JJBoosterCDC was later recommended
-
-}When did you receive your initial dose of Johnson &amp; Johnson?
+* A booster after $JJBoosterCDC was later recommended&lt;/div&gt;&lt;/div&gt;
+}
+When did you receive your initial dose of Johnson &amp; Johnson?
 (button:)[[Less than 2 weeks ago-&gt;Less than 2 weeks]]
 (button:)[[Between 2 weeks and $JJBoosterCDC ago-&gt;Vaccination Conclusion]]
 (button:)[[More than $JJBoosterCDC ago-&gt;J&amp;J More than _ Months]]
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/janssen.html&quot; target=&quot;_blank&quot;&gt;CDC&#39;s Johnson &amp; Johnson Overview&lt;/a&gt;&lt;/span&gt;
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="9" name="Other Initial Vaccination" tags="" position="715.5,761" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/janssen.html&quot; target=&quot;_blank&quot;&gt;CDC - Johnson &amp; Johnson Overview&lt;/a&gt;&lt;/span&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="9" name="Other Initial Vaccination" tags="" position="684.5,731" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//Other (non-US)//&lt;/span&gt;
@@ -362,37 +379,38 @@ Unfortunately, we do not have a way to assess non-US vaccines at this time. We h
 
 Thank you so much for your understanding. 
 
-&#39;&#39;Please reach out to us with any concerns at info@portlandswing.org.&#39;&#39;</tw-passagedata><tw-passagedata pid="10" name="Masks Intro" tags="" position="989.5,1799" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Masks - &lt;i&gt;Guidelines&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+&#39;&#39;Please reach out to us with any concerns at info@portlandswing.org.&#39;&#39;</tw-passagedata><tw-passagedata pid="10" name="Mask Guidelines" tags="" position="989.5,1797" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Masks - &lt;i&gt;Guidelines&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 In consultation with experts, and in compliance with Oregon&#39;s mask mandate, clean, high quality, well-fitting masks that cover the mouth and nose are required at PSDC dances.
 
 
-Please follow basic airline mask guidance (see Resources). Examples:
+Please follow basic airline mask guidance (see //Resources//). Examples:
 &lt;span class=&quot;list&quot;&gt;&#39;&#39;Acceptable:&#39;&#39; N95, KN95, multi-layer, etc.&lt;/span&gt;
 &lt;span class=&quot;list&quot;&gt;&#39;&#39;Not allowed:&#39;&#39; bandanas, single-layer cloth, gaiters, etc.&lt;/span&gt;
 
 Please agree to wear a good mask to our dance and keep it on while you are indoors. (Also bring some extras just in case.)
-(button:)[[I agree | Next-&gt;Mask Hygiene]]
+(button:)[[I agree | Next-&gt;Mask Proper Use]]
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://govstatus.egov.com/or-oha-face-coverings&quot; target=&quot;_blank&quot;&gt;Oregon Mask Requirements&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3818.pdf&quot; target=&quot;_blank&quot;&gt;Oregon Masking FAQs&lt;/a&gt;&lt;/span&gt; &lt;span style=&quot;font-size: 80%&quot;&gt;(see page 2 for gym/fitness/dance)&lt;/span&gt;
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.southwest.com/airline-cleanliness-social-distance/#mask-faq&quot; target=&quot;_blank&quot;&gt;Southwest Airlines Mask FAQs&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.npr.org/sections/health-shots/2021/12/23/1066871176/mask-n95-omicron-contagious&quot; target=&quot;_blank&quot;&gt;NPR Reporting on Omicron and Masks&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="11" name="Mask Hygiene" tags="" position="979.5,1929" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Masks - &lt;i&gt;Proper Use&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://govstatus.egov.com/or-oha-face-coverings&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority (OHA) - Mask Requirements&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le3818.pdf&quot; target=&quot;_blank&quot;&gt;OHA - Masking FAQs&lt;/a&gt;&lt;/span&gt; &lt;span style=&quot;font-size: 80%&quot;&gt;(see page 2 for gym/fitness/dance)&lt;/span&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.southwest.com/airline-cleanliness-social-distance/#mask-faq&quot; target=&quot;_blank&quot;&gt;Southwest Airlines - Mask FAQs&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.npr.org/sections/health-shots/2021/12/23/1066871176/mask-n95-omicron-contagious&quot; target=&quot;_blank&quot;&gt;NPR - Omicron and Masks&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="11" name="Mask Proper Use" tags="" position="979.5,1928" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Masks - &lt;i&gt;Proper Use&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 {Please follow these guidelines to ensure a properly fitting and effective mask:&lt;div class=&quot;smaller-font&quot;&gt;
+&lt;div class=&quot;bullet-space&quot;&gt;
 * Your face mask needs to be snug, yet comfortable, against the sides of your face.
 * Your mask should be secured with ties or ear loops.
 * Your mask should fit over your nose and mouth and securely under your chin.
-* If you need to remove your mask for a short period of time, fold your mask so its outer surface goes inward and against itself to prevent the inner surface from coming in contact with the outer surface.&lt;/div&gt;
+* If you need to remove your mask for a short period of time, fold your mask so its outer surface goes inward and against itself to prevent the inner surface from coming in contact with the outer surface.&lt;/div&gt;&lt;/div&gt;
 }
 Summarized from
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://health.clevelandclinic.org/a-comprehensive-guide-to-face-masks/&quot; target=&quot;_blank&quot;&gt;Cleveland Clinic&#39;s A Comprehensive Guide to Face Masks&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://health.clevelandclinic.org/a-comprehensive-guide-to-face-masks/&quot; target=&quot;_blank&quot;&gt;Cleveland Clinic - A Comprehensive Guide to Face Masks&lt;/a&gt;&lt;/span&gt;
 
 &lt;div class=&quot;smaller-font&quot;&gt;In consultation with experts, we are employing as many risk mitigation layers as possible, and requiring proper, well-fitting masks is one of those layers.&lt;/div&gt;
 
-(button:)[[Next | Health Screening-&gt;Health Screening Intro]]</tw-passagedata><tw-passagedata pid="12" name="Not enough doses" tags="" position="1338.5,848" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Doses&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+(button:)[[Next | Health Screening-&gt;Health Screening Intro]]</tw-passagedata><tw-passagedata pid="12" name="Not enough doses" tags="" position="1338.5,846" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Doses&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//1 dose of $InitialType//&lt;/span&gt;
@@ -401,17 +419,17 @@ You answered:
 Unfortunately, this does not meet the requirements to attend PSDC dances. 
 
 
-&lt;div class=&quot;smaller-font&quot;&gt;In consultation with experts, PSDC requires a minimum number of recent doses to be considered &quot;fully vaccinated.&quot; Thank you so much for your understanding.{
-&lt;br&gt;&#39;&#39;$InitialType&#39;&#39;
+&lt;div class=&quot;smaller-font&quot;&gt;In consultation with experts, PSDC requires a minimum number of recent doses to attend its dances. Thank you so much for your understanding.{
+&lt;br&gt;&#39;&#39;$InitialType&#39;&#39;&lt;div class=&quot;bullet-space&quot;&gt;
 * 2-dose regimen, with a 3rd dose for some
 * A booster after (if: $InitialType is &quot;Pfizer&quot;)[$PfizerBoosterCDC](else:)[$ModernaBoosterCDC] later recommended
-&lt;/div&gt;}
+&lt;/div&gt;&lt;/div&gt;}
 &#39;&#39;Please reach out to us with any concerns at info@portlandswing.org.&#39;&#39;
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated.html&quot; target=&quot;_blank&quot;&gt;CDC&#39;s Fully Vaccinated&lt;/a&gt;&lt;/span&gt;
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="13" name="Vaccination Conclusion" tags="" position="981.5,1571" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Conclusion&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html&quot; target=&quot;_blank&quot;&gt;CDC - Stay Up to Date&lt;/a&gt;&lt;/span&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="13" name="Vaccination Conclusion" tags="" position="981.5,1569" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Conclusion&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 You answered:
 {&lt;span style=&#39;font-family: Arial&#39;&gt;//
@@ -431,7 +449,7 @@ of $InitialType completed
 //&lt;/span&gt;}
 
 
-It sounds like you meet the current vaccination requirements to attend PSDC dances and can continue with the self-screening.
+It sounds like you meet the current vaccination requirements to attend a PSDC dance and can continue with the self-screening!
 
 &lt;div class=&quot;smaller-font&quot;&gt;Proof of vaccination will be checked at the door. PSDC Members who have shown their card previously will be noted in our member database. You may need to show your card again in the future for proof of booster. Guests (non-members) and affiliate club members will need to show proof of vaccination at each dance.&lt;/div&gt;
 
@@ -439,16 +457,13 @@ It sounds like you meet the current vaccination requirements to attend PSDC danc
 
 Upon entrance I will pledge that my proof of vaccination is not falsified in any way. I will acknowledge that discovered falsification will be considered “inappropriate behavior” pursuant to the PSDC Bylaws and that the processes under PSDC Bylaws section 6.07 can be initiated against me, potentially resulting in me being banned from PSDC activities for the length of time determined by the PSDC Board, with a refund of any prorated membership dues (no refunds will be given for the free extension periods granted for the pandemic).&lt;/div&gt;
 
-(button:)[[Next | Masks-&gt;Masks Intro]]]
+(button:)[[Next | Masks-&gt;Mask Guidelines]]]
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="14" name="Health Screening Intro" tags="" position="980.5,2147" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Health Screening - &lt;i&gt;Questions&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://covidblog.oregon.gov/cant-find-your-vaccination-card-here-are-some-ways-you-can-replace-it/&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority - Lost Vaccination Card&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="14" name="Health Screening Intro" tags="" position="980.5,2143" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Health Screening - &lt;i&gt;Questions&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
-//&#39;&#39;In consultation with experts, we are employing as many risk mitigation layers as possible, and a health screening is another one of those layers.&#39;&#39;//
-
-&#39;&#39;Screening Questions&#39;&#39;
-//Complete the screening below by clicking the dropdown box then choosing &quot;yes&quot; or &quot;no&quot; for each question.//
+//Complete the health screening below by clicking the dropdown box then choosing &quot;yes&quot; or &quot;no&quot; for each question.//
 
 Do you have or have you recently had a new or worsening cough? 
 &lt;tw-link class=&quot;dropdown&quot;&gt;(dropdown: bind $cough, &quot;__&quot;, &quot;Yes&quot;, &quot;No&quot;)&lt;/tw-link&gt;
@@ -462,8 +477,9 @@ Have you recently had shortness of breath (other than from obvious causes such a
 Have you been in close contact with anyone with these symptoms or anyone who has been diagnosed with COVID-19 in the past 14 days?
 &lt;tw-link class=&quot;dropdown&quot;&gt;(dropdown: bind $covidcontact, &quot;__&quot;, &quot;Yes&quot;, &quot;No&quot;)&lt;/tw-link&gt;
 
+&lt;div class=&quot;smaller-font&quot;&gt;In consultation with experts, we are employing as many risk mitigation layers as possible, and a health screening is another one of those layers.&lt;/div&gt;
 
-Once you have answered all $ScreeningQuestionNumber health screening questions, click the button below to proceed.
+Please make sure to answer all $ScreeningQuestionNumber questions before proceeding.
 (button:)[[Next | Results-&gt;Health Screening Results]]</tw-passagedata><tw-passagedata pid="15" name="Less than 2 weeks" tags="" position="1102.5,917" size="100,100">&lt;span style=&quot;font-size: 150%&quot;&gt;&lt;b&gt;Vaccination - &lt;i&gt;Too Recent&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;
 
 You answered:
@@ -476,21 +492,21 @@ You answered:
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/fully-vaccinated.html&quot; target=&quot;_blank&quot;&gt;CDC&#39;s Fully Vaccinated&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="16" name="J&amp;J initial more than 2 weeks" tags="" position="151.5,2315" size="100,100">###Section 1: Vaccination
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html&quot; target=&quot;_blank&quot;&gt;CDC - Stay Up to Date&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="16" name="J&amp;J initial more than 2 weeks" tags="" position="151.5,2314" size="100,100">###Section 1: Vaccination
 ####Johnson &amp; Johnson
 
 &lt;span style=&#39;font-family: Arial&#39;&gt;//It has been between 2 weeks and 2 months since my Johnson &amp; Johnson initial dose.//&lt;/span&gt;
 
 Next
 
-</tw-passagedata><tw-passagedata pid="17" name="J&amp;J Boosted More Than 2 Weeks" tags="" position="35.5,2314" size="100,100">###Section 1: Vaccination
+</tw-passagedata><tw-passagedata pid="17" name="J&amp;J Boosted More Than 2 Weeks" tags="" position="35.5,2313" size="100,100">###Section 1: Vaccination
 ####Johnson &amp; Johnson
 
 &lt;span style=&#39;font-family: Arial&#39;&gt;//I have received the J&amp;J vaccine plus booster (any type), and it has been more than 2 weeks since my most recent shot.//&lt;/span&gt;
 
 Great job :)
 
-Next</tw-passagedata><tw-passagedata pid="18" name="J&amp;J Unboosted" tags="" position="487.5,1201" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;J&amp;J&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+Next</tw-passagedata><tw-passagedata pid="18" name="J&amp;J Unboosted" tags="" position="490.5,1262" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;J&amp;J&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 (set: $BeenBoosted to &quot;No&quot;)
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//Initial J&amp;J shot more than $JJBoosterCDC ago, no booster shot//&lt;/span&gt;
@@ -501,7 +517,7 @@ You answered:
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="19" name="J&amp;J More than _ Months" tags="" position="327.5,1108" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;J&amp;J&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="19" name="J&amp;J More than _ Months" tags="" position="330.5,1169" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;J&amp;J&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 (set: $OldInitialVaccine to true)
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//Initial J&amp;J vaccination more than $JJBoosterCDC ago//&lt;/span&gt;
@@ -514,7 +530,7 @@ Have you received a booster shot yet (either J&amp;J or mRNA)?
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="20" name="J&amp;J Boosted Recently" tags="" position="252.5,1409" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;J&amp;J&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="20" name="J&amp;J Boosted Recently" tags="" position="255.5,1470" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;J&amp;J&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 (set: $BoosterTooRecent to &quot;Yes&quot;)
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//Initial J&amp;J vaccine, plus booster (any type) less than 2 weeks ago//&lt;/span&gt;
@@ -526,7 +542,7 @@ You answered:
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="21" name="J&amp;J Boosted?" tags="" position="258.5,1255" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;J&amp;J&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="21" name="J&amp;J Boosted?" tags="" position="261.5,1316" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;J&amp;J&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 (set: $BeenBoosted to &quot;Yes&quot;)
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//Initial J&amp;J vaccination plus a booster (any type)//&lt;/span&gt;
@@ -538,39 +554,53 @@ When did you receive a booster?
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="22" name="Other Layers" tags="" position="892.5,2516" size="100,100">&lt;span style=&quot;font-size: 150%&quot;&gt;&lt;b&gt;Other Mitigation Layers - &lt;i&gt;Overview&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;
-
-In consultation with experts, we are employing as many risk mitigation layers as possible, and the following are some additional layers:
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="22" name="Other Layers" tags="" position="890.5,2512" size="100,100">&lt;span style=&quot;font-size: 150%&quot;&gt;&lt;b&gt;Other Mitigation Layers - &lt;i&gt;Overview&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;
 
 &#39;&#39;Contact Tracing&#39;&#39;
 {As mentioned previously, at check-in you&#39;ll need to complete and sign our contact tracing sheet, where you&#39;ll also agree to the following:&lt;div class=&quot;smaller-font&quot;&gt;
+&lt;div class=&quot;bullet-space&quot;&gt;
 * If I discover/develop a suspected or confirmed case of COVID-19 soon after attending, I will immediately notify PSDC at info@portlandswing.org to assist with contact tracing.
 * If contacted by a contact tracer, I agree to cooperate with them, including disclosing that I attended this PSDC activity so that the contact tracer can contact PSDC. 
-* I agree to my attendance being disclosed for purposes of contact tracing, if that becomes necessary.&lt;/div&gt;}
-These measures are vital so attendees can help mitigate the spread of COVID-19.
+* I agree to my attendance being disclosed for purposes of contact tracing, if that becomes necessary.&lt;/div&gt;&lt;/div&gt;
+These measures are vital so all of you can also help mitigate the spread of COVID-19.}
 
-&#39;&#39;CO2 Monitoring&#39;&#39;
-We are using C02 monitoring to help measure the amount of fresh air circulating within our space. If the C02 level starts to increase past acceptable levels for COVID-19 mitigation, we will open additional doors/windows and adjust fan placement for increased ventilation. 
+
+&#39;&#39;Ventilation/CO&lt;sub&gt;2&lt;/sub&gt; Monitoring&#39;&#39;
+We are using C0&lt;span style=&quot;font-size: 60%&quot;&gt;2&lt;/span&gt; monitoring to help measure the amount of fresh air circulating within our space. If the C0&lt;span style=&quot;font-size: 60%&quot;&gt;2&lt;/span&gt; level starts to increase past acceptable levels for COVID-19 mitigation, we will open additional doors/windows and adjust fan placement for increased ventilation. 
+
 
 &#39;&#39;&quot;Test to Swing Dance&quot;&#39;&#39;
-If you may have been in recent contact with a potential case of COVID-19 or think any symptoms are from a //noncommunicable// cause, you may take a rapid test shortly prior to the dance.(if: $cough is &quot;No&quot; and $fever is &quot;No&quot; and $breathshortness is &quot;No&quot; and $covidcontact is &quot;No&quot;)[ You can read more [[here-&gt;Test to Swing Dance]].]
+Those who may have been in limited contact with a potential case of COVID-19 or think any symptoms are from a //noncommunicable// cause may take a rapid test shortly prior to the dance.(if: $cough is &quot;No&quot; and $fever is &quot;No&quot; and $breathshortness is &quot;No&quot; and $covidcontact is &quot;No&quot;)[ You can read more [[here-&gt;Test to Swing Dance]].]
+
+
+&lt;div class=&quot;smaller-font&quot;&gt;In consultation with experts, we are employing as many risk mitigation layers as possible, including the above. Dancing is more fun when we all feel safer!&lt;/div&gt;
 
 (button:)[[Finish!-&gt;End]]
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://govstatus.egov.com/OR-OHA-Contact-Collaborative&quot; target=&quot;_blank&quot;&gt;Oregon Contact Tracing&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.abc.net.au/news/health/2021-09-11/covid-transmission-co2-carbon-dioxide-monitor-ventilation-school/100444884&quot; target=&quot;_blank&quot;&gt;ABC News in Australia on Portable CO2 Meters for Coronavirus Mitigation&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="23" name="Footer" tags="footer" position="745,2950" size="100,100">(unless: (passage:)&#39;s tags contains &quot;no-footer&quot;)
-[&lt;span style=&quot;font-size: 75%&quot;&gt;Portland Swing Dance Club  |  Last Update: 1/8/2022&lt;/span&gt;
-&lt;span style=&quot;font-size: 75%&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;a href=&quot;https://www.portlandswing.org&quot; target=&quot;_blank&quot;&gt;www.portlandswing.org&lt;/a&gt;&lt;/div&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;a href=&quot;https://www.facebook.com/portlandswingdanceclub&quot; target=&quot;_blank&quot; class=&quot;fa fa-facebook&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;a href=&quot;https://twitter.com/popsdc&quot; target=&quot;_blank&quot; class=&quot;fa fa-twitter&quot;&gt;&lt;/a&gt;&lt;/span&gt;]</tw-passagedata><tw-passagedata pid="24" name="Header" tags="header" position="744,2839" size="100,100">(display: &quot;Apply Theme&quot;)
-(unless: (passage:)&#39;s tags contains &quot;no-header&quot;)[(link-undo:&quot;Back&quot;)[[Reset-&gt;Reset Page]]]</tw-passagedata><tw-passagedata pid="25" name="Reset Page" tags="no-header" position="888,2835" size="100,100">//&#39;&#39;Reset your responses? Are you sure?&#39;&#39;//&lt;div class=&quot;smallest-font&quot;&gt;(if: $theme is &quot;light-mode&quot;)[(You&#39;ll need to re-enable Light Mode after it resets.)]&lt;/div&gt;
-(button:)[[Reset Responses-&gt;Auto Reset]]
-(button:)(link-undo:&quot;Go Back to the Previous Screen&quot;)</tw-passagedata><tw-passagedata pid="26" name="Auto Reset" tags="no-header no-footer" position="1030,2838.5" size="100,100">(reload:)resetting</tw-passagedata><tw-passagedata pid="27" name="Fake First Passage" tags="startup" position="969,59" size="100,100">(set: $themes to &quot;dark-mode light-mode&quot;)(set: $theme to &quot;dark-mode&quot;)
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://govstatus.egov.com/OR-OHA-Contact-Collaborative&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority - Contact Tracing&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.abc.net.au/news/health/2021-09-11/covid-transmission-co2-carbon-dioxide-monitor-ventilation-school/100444884&quot; target=&quot;_blank&quot;&gt;ABC News (Australia) - CO&lt;span style=&quot;font-size: 60%&quot;&gt;2&lt;/span&gt; Meters for Coronavirus Mitigation&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="23" name="Footer" tags="footer" position="747,2951" size="100,100">(unless: (passage:)&#39;s tags contains &quot;no-footer&quot;)
+[&lt;span style=&quot;font-size: 75%&quot;&gt;Portland Swing Dance Club  |  Last Update: 1/9/2022&lt;/span&gt;
+&lt;span style=&quot;font-size: 75%&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;a href=&quot;https://www.portlandswing.org&quot; target=&quot;_blank&quot;&gt;www.portlandswing.org&lt;/a&gt;&lt;/div&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;a href=&quot;https://www.facebook.com/portlandswingdanceclub&quot; target=&quot;_blank&quot; class=&quot;fa fa-facebook&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;a href=&quot;https://twitter.com/PDX_Swing_Dance&quot; target=&quot;_blank&quot; class=&quot;fa fa-twitter&quot;&gt;&lt;/a&gt;&lt;/span&gt;]</tw-passagedata><tw-passagedata pid="24" name="Header" tags="header" position="746,2842" size="100,100">(display: &quot;Apply Theme&quot;)(display: &quot;Apply Font&quot;)
+(unless: (passage:)&#39;s tags contains &quot;no-header&quot;)[(link-undo:&quot;Back&quot;)[[Reset-&gt;Reset Page]]]</tw-passagedata><tw-passagedata pid="25" name="Reset Page" tags="no-header" position="889,2840" size="100,100">//&#39;&#39;Reset your responses? Are you sure?&#39;&#39;//&lt;div class=&quot;smallest-font&quot;&gt;{
+(if: $theme is &quot;light-mode&quot; or $FontSetting is &quot;font-smaller&quot;)[(You&#39;ll need to re-enable] 
+
+(if: $theme is &quot;light-mode&quot;)[Light Mode] 
+
+(if: $theme is &quot;light-mode&quot; and $FontSetting is &quot;font-smaller&quot;)[and]
+
+(if: $FontSetting is &quot;font-smaller&quot;)[Smaller Font]
+
+(if: $theme is &quot;light-mode&quot; or $FontSetting is &quot;font-smaller&quot;)[after it resets.)]&lt;/div&gt;
+}(button:)[[Reset Responses-&gt;Auto Reset]]
+(button:)(link-undo:&quot;Go Back to the Previous Screen&quot;)</tw-passagedata><tw-passagedata pid="26" name="Auto Reset" tags="no-header no-footer" position="1030,2839.5" size="100,100">(reload:)resetting</tw-passagedata><tw-passagedata pid="27" name="Fake First Passage" tags="startup" position="969,59" size="100,100">(set: $themes to &quot;dark-mode light-mode&quot;)(set: $theme to &quot;dark-mode&quot;)
+(set: $FontSettings to &quot;font-default font-smaller&quot;)(set: $FontSetting to &quot;font-default&quot;)
 (set: $PfizerBoosterCDC to &quot;5 months&quot;)(set: $PfizerBoosterPSDC to &quot;5 months&quot;)
 (set: $ModernaBoosterCDC to &quot;5 months&quot;)(set: $ModernaBoosterPSDC to &quot;5 months&quot;)
 (set: $JJBoosterCDC to &quot;2 months&quot;)(set: $JJBoosterPSDC to &quot;2 months&quot;)
 (set: $ScreeningQuestionNumber to 4)
-[(goto: &quot;Introduction&quot;)]</tw-passagedata><tw-passagedata pid="28" name="PSDC Scraps" tags="" position="37,2190" size="100,100">http://www.portlandswing.org/wp-content/uploads/2021/12/PSDC-Safety-First.png
+[(goto: &quot;Introduction&quot;)]</tw-passagedata><tw-passagedata pid="28" name="PSDC Scraps" tags="" position="37,2189" size="100,100">http://www.portlandswing.org/wp-content/uploads/2021/12/PSDC-Safety-First.png
 
 http://www.portlandswing.org/wp-content/uploads/2021/12/PSDC-Safety-First-PDX.png
 
@@ -581,12 +611,12 @@ http://www.portlandswing.org/wp-content/uploads/2021/12/PSDC-Safety-First-PDX.pn
 
 (set: $cough to &quot;null&quot;)
 Oops, please go back and make sure to select either yes or no on all the health screening questions.
-{(live:5s)[(go-to: &quot;Health Screening Intro&quot;)]}</tw-passagedata><tw-passagedata pid="29" name="Health Screening Results" tags="" position="958.5,2282" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Health Screening - &lt;i&gt;Results&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+{(live:5s)[(go-to: &quot;Health Screening Intro&quot;)]}</tw-passagedata><tw-passagedata pid="29" name="Health Screening Results" tags="" position="957.5,2277" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Health Screening - &lt;i&gt;Results&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 (if: $cough is &quot;Yes&quot;)[(set: $coughYes to &quot;* New or worsening cough&quot;)](else-if: $cough is &quot;No&quot; or &quot;__&quot;)[(set: $coughYes to &quot; &quot;)](if: $fever is &quot;Yes&quot;)[(set: $feverYes to &quot;* Current or recent fever&quot;)](else-if: $fever is &quot;No&quot; or &quot;__&quot;)[(set: $feverYes to &quot; &quot;)](if: $breathshortness is &quot;Yes&quot;)[(set: $breathshortnessYes to &quot;* Recent shortness of breath&quot;)](else-if: $breathshortness is &quot;No&quot; or &quot;__&quot;)[(set: $breathshortnessYes to &quot; &quot;)](if: $covidcontact is &quot;Yes&quot;)[(set: $covidcontactYes to &quot;* Contact in the past 14 days with someone with symptoms or diagnosed with COVID-19&quot;)](else-if: $covidcontact is &quot;No&quot; or &quot;__&quot;)[(set: $covidcontactYes to &quot; &quot;)]{
 }(if: $cough is &quot;__&quot; or $fever is &quot;__&quot; or $breathshortness is &quot;__&quot; or $covidcontact is &quot;__&quot;)[Oops, you didn&#39;t answer all of the questions.
 
-Please go back (using the Back button on this screen) and make sure to select either &quot;yes&quot; or &quot;no&quot; on all $ScreeningQuestionNumber of the health screening questions.]{
+Please go back (using the Back button at the top of this screen) and make sure to select either &quot;yes&quot; or &quot;no&quot; on all $ScreeningQuestionNumber of the health screening questions.]{
 
 }(else-if: $cough is &quot;Yes&quot; or $fever is &quot;Yes&quot; or $breathshortness is &quot;Yes&quot; or $covidcontact is &quot;Yes&quot;)[You answered &quot;yes&quot; to&lt;span style=&#39;font-family: Arial&#39;&gt; //$coughYes $feverYes $breathshortnessYes $covidcontactYes//&lt;/span&gt;{
 }This indicates higher risk of possibly bringing COVID-19 to our dance and infecting others.
@@ -594,21 +624,20 @@ Please go back (using the Back button on this screen) and make sure to select ei
 &#39;&#39; Please stay home, and consider consulting a medical professional. We ask you to consider the health and safety of our community and behave responsibly. Thank you!&#39;&#39;
 
 
-(link-replace:&quot;But I really don&#39;t think I have COVID-19.&quot;, (button:))[You added:&lt;br&gt;&lt;span style=&#39;font-family: Arial&#39;&gt;//But I really don&#39;t think I have COVID-19.//&lt;/span&gt;&lt;br&gt;&lt;br&gt;If you (if:$covidcontact is &quot;Yes&quot;)[only had limited contact, or ]have any possible symptoms and suspect a //noncommunicable// cause such as allergies or asthma, one option would be taking a rapid test shortly before our dance and only attending with a negative result.
-&lt;br&gt;
-Continue on to learn more about other mitigation, including the &quot;Test to Swing Dance&quot; option.
+(link-replace:&quot;But I really don&#39;t think I have COVID-19.&quot;, (button:))[You added:&lt;br&gt;&lt;span style=&#39;font-family: Arial&#39;&gt;//But I really don&#39;t think I have COVID-19.//&lt;/span&gt;&lt;br&gt;&lt;br&gt;If you (if:$covidcontact is &quot;Yes&quot;)[only had limited contact, or ]have any possible symptoms and suspect a //noncommunicable// cause such as allergies or asthma, the alternative to staying home is taking a rapid test shortly before our dance and only attending with a negative result (&quot;Test to Swing Dance&quot;).
+
+Proceed to learn more.
 (button:)[[Next | Other Mitigation Layers - Testing-&gt;Test to Swing Dance]]]
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2388B.pdf&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority&#39;s Quarantine Guide&lt;/a&gt;&lt;br&gt;&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://govstatus.egov.com/or-oha-covid-19-testing&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority&#39;s Testing in Oregon&lt;/a&gt;&lt;br&gt;&lt;/span&gt;]{
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2388B.pdf&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority - Quarantine Guide&lt;/a&gt;&lt;br&gt;&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://govstatus.egov.com/or-oha-covid-19-testing&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority - Testing in Oregon&lt;/a&gt;&lt;br&gt;&lt;/span&gt;]{
 }(else-if: $cough is &quot;No&quot; and $fever is &quot;No&quot; and $breathshortness is &quot;No&quot; and $covidcontact is &quot;No&quot;)[You marked &quot;no&quot; on all $ScreeningQuestionNumber screening questions, indicating that you don&#39;t have the 3 common screening symptoms or recent contact with a known or suspected case of COVID-19.
 
-We will briefly ask you the $ScreeningQuestionNumber health screening questions again at check-in, and for you to mark the appropriate box on the check-in sheet.
+We will briefly ask you the $ScreeningQuestionNumber health screening questions again at check-in, and for you to mark the appropriate box on the check-in/contact tracing sheet. 
 
-You will also be required to complete our check-in form with your current contact information so that we can contact you in the event that we are informed of a COVID-19 case at our dance.
+We will also need your current contact information in the event that we are alerted of a COVID-19 case in connection with our dance.
 
-Continue on to learn about our other mitigation layers, including contact tracing.
 (button:)[[Next | Other Mitigation Layers-&gt;Other Layers]]]</tw-passagedata><tw-passagedata pid="30" name="Pfizer Most Recent" tags="" position="764.5,1038" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Pfizer&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 You answered:
@@ -668,29 +697,28 @@ Experts recommend waiting at least 2 weeks before considering yourself to have d
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="35" name="Test to Swing Dance" tags="" position="1032.5,2471" size="100,100">&lt;span style=&quot;font-size: 150%&quot;&gt;&lt;b&gt;Other Mitigation Layers - &lt;i&gt;Testing&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="35" name="Test to Swing Dance" tags="" position="1032.5,2466" size="100,100">&lt;span style=&quot;font-size: 150%&quot;&gt;&lt;b&gt;Other Mitigation Layers - &lt;i&gt;Testing&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;
 
-In consultation with experts, we are employing as many risk mitigation layers as possible, and &quot;Test to Swing Dance&quot; (like &quot;test to stay&quot;) is another one of those layers.
+&lt;div class=&quot;smaller-font&quot;&gt;In consultation with experts, we are employing as many risk mitigation layers as possible, and &quot;Test to Swing Dance&quot; (like &quot;test to stay&quot;) is another one of those layers.&lt;/div&gt;
 
 From
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://thehill.com/opinion/healthcare/584456-we-need-to-normalize-rapid-testing-for-unmasked-gatherings&quot; target=&quot;_blank&quot;&gt;Dr. Dorry Segev on Testing for Events&lt;/a&gt;&lt;/span&gt;:
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://thehill.com/opinion/healthcare/584456-we-need-to-normalize-rapid-testing-for-unmasked-gatherings&quot; target=&quot;_blank&quot;&gt;Dr. Dorry Segev - Testing for Events&lt;/a&gt;&lt;/span&gt;:
 
 (b4r:&quot;solid&quot;)+(b4r-colour:#5687b8)+(css:&quot;padding: 20px 20px 20px 20px;&quot;)[One good way to mitigate this risk is to require rapid antigen testing at the door, or as close to the time of the gathering as possible.
 
-...rapid antigen tests are appealing because they are very good, very fast and do not require a lab. And unlike the RT-PCR test that you had to do three days before the gathering, &#39;&#39;you can do a rapid antigen test at or very close to the time of the gathering, giving you a more timely measure of whether you are virus-free&#39;&#39;.(emphasis ours)
+...rapid antigen tests are appealing because they are very good, very fast and do not require a lab. And unlike the RT-PCR test that you had to do three days before the gathering, &#39;&#39;you can do a rapid antigen test at or very close to the time of the gathering, giving you a more timely measure of whether you are virus-free&#39;&#39;. (emphasis ours)
 ...]
 
 
 &#39;&#39;Should you decide to &quot;Test to Swing Dance&quot; and produce a negative result, please inform us at the front desk and note it on the check-in form. Otherwise, please stay home.&#39;&#39;
 
-Current contact information is collected from all attendees so that we can contact everyone in the event that we are informed of a COVID-19 case at our dance.
-
-(if: $cough is &quot;Yes&quot; or $fever is &quot;Yes&quot; or $breathshortness is &quot;Yes&quot; or $covidcontact is &quot;Yes&quot;)[Continue on to learn about our other additional mitigation layers.
-(button:)[[Next-&gt;Other Layers]]](else:)+(button:)[(link-undo:&quot;Back&quot;)]
+We will also need your current contact information in the event that we are alerted of a COVID-19 case in connection with our dance.
+(if: $cough is &quot;Yes&quot; or $fever is &quot;Yes&quot; or $breathshortness is &quot;Yes&quot; or $covidcontact is &quot;Yes&quot;)[
+(button:)[[Next | Other Mitigation Layers - Overview-&gt;Other Layers]]](else:)+(button:)[(link-undo:&quot;Back&quot;)]
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/testing.html&quot; target=&quot;_blank&quot;&gt;CDC&#39;s Testing Page&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="36" name="Moderna Most Recent" tags="" position="1656.5,1149" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Moderna&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/testing.html&quot; target=&quot;_blank&quot;&gt;CDC - Testing&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="36" name="Moderna Most Recent" tags="" position="1656.5,1149" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Moderna&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//2+ initial doses of Moderna//&lt;/span&gt;
@@ -749,25 +777,26 @@ Experts recommend waiting at least 2 weeks before considering yourself to have d
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="41" name="Apply Theme" tags="" position="838,123.5" size="100,100">(print: &quot;&lt;script&gt;$(&#39;html&#39;).removeClass(&#39;&quot; + $themes + &quot;&#39;).addClass(&#39;&quot; + $theme + &quot;&#39;)&lt;/script&gt;&quot;)</tw-passagedata><tw-passagedata pid="42" name="Booster Resources" tags="" position="445.5,678.5" size="100,100">&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/booster-shot.html&quot; target=&quot;_blank&quot;&gt;CDC&#39;s Booster Shots&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://govstatus.egov.com/or-oha-booster-covid-19-vaccine&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority&#39;s Boosters &amp; Third Doses&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="43" name="End" tags="" position="889.5,2641" size="100,100">&lt;img src=http://www.portlandswing.org/wp-content/uploads/2021/12/PSDC-Safety-First.png class=&quot;center-logo&quot;&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="41" name="Apply Theme" tags="" position="838,122.5" size="100,100">(print: &quot;&lt;script&gt;$(&#39;html&#39;).removeClass(&#39;&quot; + $themes + &quot;&#39;).addClass(&#39;&quot; + $theme + &quot;&#39;)&lt;/script&gt;&quot;)</tw-passagedata><tw-passagedata pid="42" name="Booster Resources" tags="" position="445.5,677.5" size="100,100">&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/booster-shot.html&quot; target=&quot;_blank&quot;&gt;CDC - Booster Shots&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://govstatus.egov.com/or-oha-booster-covid-19-vaccine&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority - Boosters &amp; Third Doses&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="43" name="End" tags="" position="889.5,2641" size="100,100">&lt;img src=http://www.portlandswing.org/wp-content/uploads/2021/12/PSDC-Safety-First.png class=&quot;center-logo&quot;&gt;
 
 //&#39;&#39;You’re all done!&#39;&#39;//
 
-{Remember to bring:&lt;div class=&quot;smaller-font&quot;&gt;
-* Vaccination Card
-* Masks
-* Water/Water Bottle
-* Snacks
-* Hand Sanitizer&lt;/div&gt;
-}
 Thank you so much for taking the time to review the PSDC health and safety guidelines and self-screen. Our community appreciates you!
 
+{Remember to bring:&lt;div class=&quot;smaller-font&quot;&gt;
+&lt;div class=&quot;bullet-space&quot;&gt;
+* Vaccination Card
+* High Quality Masks
+* Water/Water Bottle
+* Snacks
+* Hand Sanitizer&lt;/div&gt;&lt;/div&gt;
+}
 &lt;div class=&quot;center-this&quot;&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;&#39;&#39;See you at the dance!&#39;&#39;&lt;/span&gt;
 
 //&lt;div class=&quot;smallest-font&quot;&gt;Use the Reset button here or at the top of the page to reset your responses for the next dance.&lt;/div&gt;//
 
-(button:)[[Reset-&gt;Reset Page]]&lt;/div&gt;</tw-passagedata></tw-storydata>
+(button:)[[Reset-&gt;Reset Page]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Apply Font" tags="" position="1102,122.5" size="100,100">(print: &quot;&lt;script&gt;$(&#39;html&#39;).removeClass(&#39;&quot; + $FontSettings + &quot;&#39;).addClass(&#39;&quot; + $FontSetting + &quot;&#39;)&lt;/script&gt;&quot;)</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
