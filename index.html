@@ -24,9 +24,23 @@ html.light-mode tw-story {
 html.font-default tw-passage {
 	font-size: auto;
 }
+
+div.header-footer-default {
+    font-size: auto;
+    height: auto;
+    padding: auto;
+}
+
 html.font-smaller tw-passage {
 	font-size: 85%;
 }
+
+div.header-footer-smaller {
+    font-size: 117.6%;
+    height: 117.6%;
+    padding: 0.4%;
+}
+
 
 
 /*custom footer background and text KEEP*/
@@ -44,9 +58,9 @@ tw-include[type="footer"] {
 
 /* Social media - style the font icons KEEP*/
 .fa {
-  padding: 2px 10px 2px 10px;
+  padding: 2px 8px 2px 8px;
   font-size: 30px;
-  width: 80px;
+  width: 70px;
   text-align: center;
   text-decoration: none;
 }
@@ -70,6 +84,11 @@ tw-include[type="footer"] {
   color: white;
 }
 
+.fa-instagram {
+  background: inherit;
+  color: white;
+}
+
 /*For external links in footer - next 3 sections KEEP*/
 .footer a:link {
   color: white;
@@ -81,7 +100,7 @@ tw-include[type="footer"] {
   opacity: 0.5;
 }
 
-/*Custom divs and non-div KEEP*/
+/*Custom divs etc. KEEP*/
 div.smallest-font {
   font-size: 70%;
   line-height: 110%;
@@ -225,7 +244,12 @@ tw-link.visited:hover {
 	color: #87cfff;
 }
 
-
+.icon-img {
+  	width: auto;
+    padding: 0px 10px 0px 0px;
+    margin-top: -5px;
+    float: left;
+}
 
 /*Dropdown formatting*/
 tw-link.dropdown {
@@ -238,7 +262,7 @@ tw-link.dropdown {
     height: auto;
   	width: auto;
     top: 0;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Header" color="purple"></tw-tag>,<tw-tag name="header" color="purple"></tw-tag>,<tw-tag name="footer" color="purple"></tw-tag>,<tw-tag name="no-header" color="red"></tw-tag>,<tw-tag name="no-footer" color="red"></tw-tag><tw-passagedata pid="1" name="Vaccination Status" tags="" position="970.5,388" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Status&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Header" color="purple"></tw-tag>,<tw-tag name="header" color="purple"></tw-tag>,<tw-tag name="footer" color="purple"></tw-tag>,<tw-tag name="no-header" color="red"></tw-tag>,<tw-tag name="no-footer" color="red"></tw-tag>,<tw-tag name="yellow" color="yellow"></tw-tag><tw-passagedata pid="1" name="Vaccination Status" tags="" position="970.5,385" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Status&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 Are you vaccinated against COVID-19?
 (button:)[[Yes-&gt;Yes, I am vaccinated]]
@@ -290,7 +314,7 @@ We&#39;re sorry, at this time only dancers who have been vaccinated against COVI
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/science/science-briefs/fully-vaccinated-people.html&quot; target=&quot;_blank&quot;&gt;CDC - Vaccine Science Brief&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="5" name="Introduction" tags="" position="969,168" size="100,100">{&lt;div class=&quot;center-this&quot;&gt;(if: $theme is &#39;dark-mode&#39;)[(link: &#39;Enable Light Mode&#39;, (button:))[
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/science/science-briefs/fully-vaccinated-people.html&quot; target=&quot;_blank&quot;&gt;CDC - Vaccine Science Brief&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="5" name="Introduction" tags="" position="969,162" size="100,100">{&lt;div class=&quot;center-this&quot;&gt;(if: $theme is &#39;dark-mode&#39;)[(link: &#39;Enable Light Mode&#39;, (button:))[
 	(set: $theme to &quot;light-mode&quot;)
 	(display: &quot;Apply Theme&quot;)
 	(go-to: &quot;Introduction&quot;)
@@ -311,17 +335,17 @@ We&#39;re sorry, at this time only dancers who have been vaccinated against COVI
 ]]&lt;/div&gt;
 }
 &lt;div class=&quot;center-this&quot;&gt;&lt;span style=&quot;font-size: 125%&quot;&gt;&#39;&#39;Welcome to PSDC&#39;s interactive self-screening!&#39;&#39;&lt;/span&gt;&lt;/div&gt;
-&lt;img src=http://www.portlandswing.org/wp-content/uploads/2021/12/PSDC-logo-Color-higher-res.png class=&quot;center-logo&quot;&gt;
+&lt;img src=http://www.portlandswing.org/wp-content/uploads/2021/12/PSDC-logo-Color-higher-res.png class=&quot;center-logo&quot; alt=&quot;Portland Swing Dance Club logo, with the club name and 2 partner dancers on a bridge&quot;&gt;
 
 {With COVID-19 safety guidelines constantly needing to change, we&#39;re doing what we can to keep all of you safer, but we also need &lt;i&gt;your&lt;/i&gt; help. We offer this interactive tool to help you navigate our safety guidelines and do your part. This covers...&lt;div class=&quot;smaller-font&quot;&gt;
 &lt;div class=&quot;bullet-space&quot;&gt;
 * Vaccination
 * Masks
 * Health Screening
-* Other Mitigation Layers&lt;/div&gt;
+* Other Mitigation Layers
 This self-screening tool works best if you use it shortly before attending our dance. Keeping our community safer is a team effort!
 &lt;br&gt;
-If you make a selection error or need to reset your responses for the next dance, use the Back and Reset buttons (respectively) in the header, instead of your browser&#39;s navigation.&lt;/div&gt;}
+If you make a selection error or need to reset your responses for the next dance, use the Back or Reset button (respectively) in the header, instead of your browser&#39;s navigation.&lt;/div&gt;&lt;/div&gt;}
 
 (button:)[[[[Start | Vaccination-&gt;Vaccination Status]]]]
 
@@ -340,7 +364,7 @@ How many doses of the Moderna vaccine have you received (excluding any boosters)
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
 &lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Moderna.html&quot; target=&quot;_blank&quot;&gt;CDC - Moderna Overview&lt;/a&gt;&lt;/span&gt;
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="7" name="Pfizer Initial Vaccination" tags="" position="944.5,757" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="7" name="Pfizer Initial Vaccination" tags="" position="957.5,753" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 (set: $InitialType to &quot;Pfizer&quot;)
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//Pfizer-BioNTech initial vaccine//&lt;/span&gt;
@@ -354,7 +378,7 @@ How many doses of the Pfizer vaccine have you received (excluding any boosters)?
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
 &lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/Pfizer-BioNTech.html&quot; target=&quot;_blank&quot;&gt;CDC - Pfizer Overview&lt;/a&gt;&lt;/span&gt;
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="8" name="J&amp;J Initial Vaccination" tags="" position="312.5,919" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="8" name="J&amp;J Initial Vaccination" tags="" position="312.5,918" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 (set: $InitialType to &quot;J&amp;J&quot;)
 You answered:
 {&lt;span style=&#39;font-family: Arial&#39;&gt;//Johnson &amp; Johnson//&lt;/span&gt;&lt;div class=&quot;smaller-font&quot;&gt;&lt;div class=&quot;bullet-space&quot;&gt;
@@ -363,13 +387,13 @@ You answered:
 }
 When did you receive your initial dose of Johnson &amp; Johnson?
 (button:)[[Less than 2 weeks ago-&gt;Less than 2 weeks]]
-(button:)[[Between 2 weeks and $JJBoosterCDC ago-&gt;Vaccination Conclusion]]
+(button:)[[2 weeks to $JJBoosterCDC ago-&gt;Vaccination Conclusion]]
 (button:)[[More than $JJBoosterCDC ago-&gt;J&amp;J More than _ Months]]
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
 &lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines/janssen.html&quot; target=&quot;_blank&quot;&gt;CDC - Johnson &amp; Johnson Overview&lt;/a&gt;&lt;/span&gt;
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="9" name="Other Initial Vaccination" tags="" position="684.5,731" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="9" name="Other Initial Vaccination" tags="" position="734.5,706" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Type&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//Other (non-US)//&lt;/span&gt;
@@ -379,7 +403,7 @@ Unfortunately, we do not have a way to assess non-US vaccines at this time. We h
 
 Thank you so much for your understanding. 
 
-&#39;&#39;Please reach out to us with any concerns at info@portlandswing.org.&#39;&#39;</tw-passagedata><tw-passagedata pid="10" name="Mask Guidelines" tags="" position="989.5,1797" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Masks - &lt;i&gt;Guidelines&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+&#39;&#39;Please reach out to us with any concerns at info@portlandswing.org.&#39;&#39;</tw-passagedata><tw-passagedata pid="10" name="Mask Guidelines" tags="" position="989.5,1796" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Masks - &lt;i&gt;Guidelines&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 In consultation with experts, and in compliance with Oregon&#39;s mask mandate, clean, high quality, well-fitting masks that cover the mouth and nose are required at PSDC dances.
 
@@ -388,8 +412,8 @@ Please follow basic airline mask guidance (see //Resources//). Examples:
 &lt;span class=&quot;list&quot;&gt;&#39;&#39;Acceptable:&#39;&#39; N95, KN95, multi-layer, etc.&lt;/span&gt;
 &lt;span class=&quot;list&quot;&gt;&#39;&#39;Not allowed:&#39;&#39; bandanas, single-layer cloth, gaiters, etc.&lt;/span&gt;
 
-Please agree to wear a good mask to our dance and keep it on while you are indoors. (Also bring some extras just in case.)
-(button:)[[I agree | Next-&gt;Mask Proper Use]]
+By attending, you are agreeing to wear a good mask into PSDC&#39;s dance and then stay masked while you are indoors. (Also bring some extras just in case.)
+(button:)[[I Agree | Next-&gt;Mask Proper Use]]
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
@@ -410,7 +434,7 @@ Summarized from
 
 &lt;div class=&quot;smaller-font&quot;&gt;In consultation with experts, we are employing as many risk mitigation layers as possible, and requiring proper, well-fitting masks is one of those layers.&lt;/div&gt;
 
-(button:)[[Next | Health Screening-&gt;Health Screening Intro]]</tw-passagedata><tw-passagedata pid="12" name="Not enough doses" tags="" position="1338.5,846" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Doses&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+(button:)[[Next | Health Screening-&gt;Health Screening Questions]]</tw-passagedata><tw-passagedata pid="12" name="Not enough doses" tags="" position="1338.5,846" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Doses&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 You answered:
 &lt;span style=&#39;font-family: Arial&#39;&gt;//1 dose of $InitialType//&lt;/span&gt;
@@ -429,7 +453,7 @@ Unfortunately, this does not meet the requirements to attend PSDC dances.
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
 &lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html&quot; target=&quot;_blank&quot;&gt;CDC - Stay Up to Date&lt;/a&gt;&lt;/span&gt;
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="13" name="Vaccination Conclusion" tags="" position="981.5,1569" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Conclusion&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="13" name="Vaccination Conclusion" tags="" position="981.5,1567" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Vaccination - &lt;i&gt;Conclusion&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 You answered:
 {&lt;span style=&#39;font-family: Arial&#39;&gt;//
@@ -438,7 +462,7 @@ You answered:
 
 of $InitialType completed 
 
-(if: $OldInitialVaccine is true)[more than](else:)[between 2 weeks and]
+(if: $OldInitialVaccine is true)[more than](else:)[2 weeks to]
 
 (if: $InitialType is &quot;Moderna&quot;)[$ModernaBoosterCDC](else-if: $InitialType is &quot;Pfizer&quot;)[$PfizerBoosterCDC](else-if: $InitialType is &quot;J&amp;J&quot;)[$JJBoosterCDC] ago,
 
@@ -449,11 +473,11 @@ of $InitialType completed
 //&lt;/span&gt;}
 
 
-It sounds like you meet the current vaccination requirements to attend a PSDC dance and can continue with the self-screening!
+&#39;&#39;It sounds like you meet the current vaccination requirements to attend a PSDC dance and can continue with the self-screening!&#39;&#39;
 
-&lt;div class=&quot;smaller-font&quot;&gt;Proof of vaccination will be checked at the door. PSDC Members who have shown their card previously will be noted in our member database. You may need to show your card again in the future for proof of booster. Guests (non-members) and affiliate club members will need to show proof of vaccination at each dance.&lt;/div&gt;
+&lt;div class=&quot;smaller-font&quot;&gt;//Proof of vaccination will be checked at the door//. PSDC Members who have shown their card previously will be noted in our member database. You may need to show your card again in the future for proof of booster. Guests (non-members) and affiliate club members will need to show proof of vaccination at each dance.&lt;/div&gt;
 
-(link-replace:&quot;Show the fine print | Continue&quot;, (button:))[&lt;div class=&quot;smallest-font&quot;&gt;Please keep in mind that the use of a fake vaccination card is a federal crime, punishable by prison time and/or a large fine.
+(link-replace:&quot;Show fine print | Continue&quot;, (button:))[&lt;div class=&quot;smallest-font&quot;&gt;Please keep in mind that the use of a fake vaccination card is a federal crime, punishable by prison time and/or a large fine.
 
 Upon entrance I will pledge that my proof of vaccination is not falsified in any way. I will acknowledge that discovered falsification will be considered “inappropriate behavior” pursuant to the PSDC Bylaws and that the processes under PSDC Bylaws section 6.07 can be initiated against me, potentially resulting in me being banned from PSDC activities for the length of time determined by the PSDC Board, with a refund of any prorated membership dues (no refunds will be given for the free extension periods granted for the pandemic).&lt;/div&gt;
 
@@ -461,9 +485,10 @@ Upon entrance I will pledge that my proof of vaccination is not falsified in any
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://covidblog.oregon.gov/cant-find-your-vaccination-card-here-are-some-ways-you-can-replace-it/&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority - Lost Vaccination Card&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="14" name="Health Screening Intro" tags="" position="980.5,2143" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Health Screening - &lt;i&gt;Questions&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://covidblog.oregon.gov/cant-find-your-vaccination-card-here-are-some-ways-you-can-replace-it/&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority - Lost Vaccination Card&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.consumer.ftc.gov/blog/2021/08/dont-buy-fake-covid-19-vaccine-cards-or-negative-test-results-heres-why&quot; target=&quot;_blank&quot;&gt;Federal Trade Commission - Don&#39;t Buy Fake Vaccine Cards&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="14" name="Health Screening Questions" tags="" position="980.5,2142" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Health Screening - &lt;i&gt;Questions&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
-//Complete the health screening below by clicking the dropdown box then choosing &quot;yes&quot; or &quot;no&quot; for each question.//
+//Click the dropdown boxes to choose &quot;yes&quot; or &quot;no&quot; for each question below.//
 
 Do you have or have you recently had a new or worsening cough? 
 &lt;tw-link class=&quot;dropdown&quot;&gt;(dropdown: bind $cough, &quot;__&quot;, &quot;Yes&quot;, &quot;No&quot;)&lt;/tw-link&gt;
@@ -556,8 +581,12 @@ When did you receive a booster?
 //&#39;&#39;Resources:&#39;&#39;//
 (display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="22" name="Other Layers" tags="" position="890.5,2512" size="100,100">&lt;span style=&quot;font-size: 150%&quot;&gt;&lt;b&gt;Other Mitigation Layers - &lt;i&gt;Overview&lt;/i&gt;&lt;/b&gt;&lt;/span&gt;
 
+&#39;&#39;Sanitization&#39;&#39;
+We will have hand sanitizer available. Please also bring some and use it or wash your hands frequently throughout the dance.
+
+
 &#39;&#39;Contact Tracing&#39;&#39;
-{As mentioned previously, at check-in you&#39;ll need to complete and sign our contact tracing sheet, where you&#39;ll also agree to the following:&lt;div class=&quot;smaller-font&quot;&gt;
+{As mentioned, at check-in you&#39;ll complete and sign our contact tracing sheet, where you&#39;ll also agree to the following:&lt;div class=&quot;smaller-font&quot;&gt;
 &lt;div class=&quot;bullet-space&quot;&gt;
 * If I discover/develop a suspected or confirmed case of COVID-19 soon after attending, I will immediately notify PSDC at info@portlandswing.org to assist with contact tracing.
 * If contacted by a contact tracer, I agree to cooperate with them, including disclosing that I attended this PSDC activity so that the contact tracer can contact PSDC. 
@@ -566,7 +595,7 @@ These measures are vital so all of you can also help mitigate the spread of COVI
 
 
 &#39;&#39;Ventilation/CO&lt;sub&gt;2&lt;/sub&gt; Monitoring&#39;&#39;
-We are using C0&lt;span style=&quot;font-size: 60%&quot;&gt;2&lt;/span&gt; monitoring to help measure the amount of fresh air circulating within our space. If the C0&lt;span style=&quot;font-size: 60%&quot;&gt;2&lt;/span&gt; level starts to increase past acceptable levels for COVID-19 mitigation, we will open additional doors/windows and adjust fan placement for increased ventilation. 
+We are using C0&lt;span style=&quot;font-size: 60%&quot;&gt;2&lt;/span&gt; monitoring to help measure the amount of fresh air circulating within our space. If the C0&lt;span style=&quot;font-size: 60%&quot;&gt;2&lt;/span&gt; level starts to increase past acceptable levels for COVID-19 mitigation, we will open doors/windows and adjust the fans for increased ventilation. 
 
 
 &#39;&#39;&quot;Test to Swing Dance&quot;&#39;&#39;
@@ -580,10 +609,12 @@ Those who may have been in limited contact with a potential case of COVID-19 or 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
 &lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://govstatus.egov.com/OR-OHA-Contact-Collaborative&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority - Contact Tracing&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.abc.net.au/news/health/2021-09-11/covid-transmission-co2-carbon-dioxide-monitor-ventilation-school/100444884&quot; target=&quot;_blank&quot;&gt;ABC News (Australia) - CO&lt;span style=&quot;font-size: 60%&quot;&gt;2&lt;/span&gt; Meters for Coronavirus Mitigation&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="23" name="Footer" tags="footer" position="747,2951" size="100,100">(unless: (passage:)&#39;s tags contains &quot;no-footer&quot;)
-[&lt;span style=&quot;font-size: 75%&quot;&gt;Portland Swing Dance Club  |  Last Update: 1/9/2022&lt;/span&gt;
-&lt;span style=&quot;font-size: 75%&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;a href=&quot;https://www.portlandswing.org&quot; target=&quot;_blank&quot;&gt;www.portlandswing.org&lt;/a&gt;&lt;/div&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;a href=&quot;https://www.facebook.com/portlandswingdanceclub&quot; target=&quot;_blank&quot; class=&quot;fa fa-facebook&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;a href=&quot;https://twitter.com/PDX_Swing_Dance&quot; target=&quot;_blank&quot; class=&quot;fa fa-twitter&quot;&gt;&lt;/a&gt;&lt;/span&gt;]</tw-passagedata><tw-passagedata pid="24" name="Header" tags="header" position="746,2842" size="100,100">(display: &quot;Apply Theme&quot;)(display: &quot;Apply Font&quot;)
-(unless: (passage:)&#39;s tags contains &quot;no-header&quot;)[(link-undo:&quot;Back&quot;)[[Reset-&gt;Reset Page]]]</tw-passagedata><tw-passagedata pid="25" name="Reset Page" tags="no-header" position="889,2840" size="100,100">//&#39;&#39;Reset your responses? Are you sure?&#39;&#39;//&lt;div class=&quot;smallest-font&quot;&gt;{
+&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.abc.net.au/news/health/2021-09-11/covid-transmission-co2-carbon-dioxide-monitor-ventilation-school/100444884&quot; target=&quot;_blank&quot;&gt;ABC News (Australia) - CO&lt;span style=&quot;font-size: 60%&quot;&gt;2&lt;/span&gt; Meters for Coronavirus Mitigation&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="23" name="Footer" tags="footer" position="747,2949" size="100,100">{(if: $FontSetting is &quot;font-default&quot;)[(unless: (passage:)&#39;s tags contains &quot;no-footer&quot;)[&lt;div class=&quot;header-footer-default&quot;&gt;&lt;span style=&quot;font-size: 75%&quot;&gt;Portland Swing Dance Club  |  Last Update: 1/11/2022&lt;/span&gt;
+&lt;span style=&quot;font-size: 75%&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;a href=&quot;https://www.portlandswing.org&quot; target=&quot;_blank&quot;&gt;www.portlandswing.org&lt;/a&gt;&lt;/div&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;a href=&quot;https://www.facebook.com/portlandswingdanceclub&quot; target=&quot;_blank&quot; alt=&quot;Visit Us on Facebook&quot; class=&quot;fa fa-facebook&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;a href=&quot;https://twitter.com/PDX_Swing_Dance&quot; target=&quot;_blank&quot; alt=&quot;Visit Us on Twitter&quot; class=&quot;fa fa-twitter&quot;&gt;&lt;/a&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;a href=&quot;https://www.instagram.com/pdx_swing_dance/&quot; target=&quot;_blank&quot; alt=&quot;Follow Us on Instagram&quot; class=&quot;fa fa-instagram&quot;&gt;&lt;/a&gt;&lt;/span&gt;]&lt;/div&gt;]
+(if: $FontSetting is &quot;font-smaller&quot;)[(unless: (passage:)&#39;s tags contains &quot;no-footer&quot;)[&lt;div class=&quot;header-footer-smaller&quot;&gt;&lt;span style=&quot;font-size: 75%&quot;&gt;Portland Swing Dance Club  |  Last Update: 1/11/2022&lt;/span&gt;
+&lt;span style=&quot;font-size: 75%&quot;&gt;&lt;div class=&quot;footer&quot;&gt;&lt;a href=&quot;https://www.portlandswing.org&quot; target=&quot;_blank&quot;&gt;www.portlandswing.org&lt;/a&gt;&lt;/div&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;a href=&quot;https://www.facebook.com/portlandswingdanceclub&quot; target=&quot;_blank&quot; alt=&quot;Visit Us on Facebook&quot; class=&quot;fa fa-facebook&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;a href=&quot;https://twitter.com/PDX_Swing_Dance&quot; target=&quot;_blank&quot; alt=&quot;Visit Us on Twitter&quot; class=&quot;fa fa-twitter&quot;&gt;&lt;/a&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;&lt;a href=&quot;https://www.instagram.com/pdx_swing_dance/&quot; target=&quot;_blank&quot; alt=&quot;Follow Us on Instagram&quot; class=&quot;fa fa-instagram&quot;&gt;&lt;/a&gt;&lt;/span&gt;]&lt;/div&gt;]}</tw-passagedata><tw-passagedata pid="24" name="Header" tags="header" position="746,2841" size="100,100">(display: &quot;Apply Theme&quot;)(display: &quot;Apply Font&quot;)
+{(if: $FontSetting is &quot;font-default&quot;)[&lt;div class=&quot;header-footer-default&quot;&gt;(unless: (passage:)&#39;s tags contains &quot;no-header&quot;)[(link-undo:&quot;Back&quot;)[[Reset-&gt;Reset Page]]]&lt;/div&gt;]
+(if: $FontSetting is &quot;font-smaller&quot;)[&lt;div class=&quot;header-footer-smaller&quot;&gt;(unless: (passage:)&#39;s tags contains &quot;no-header&quot;)[(link-undo:&quot;Back&quot;)[[Reset-&gt;Reset Page]]]&lt;/div&gt;]}</tw-passagedata><tw-passagedata pid="25" name="Reset Page" tags="no-header" position="889,2840" size="100,100">//&#39;&#39;Reset your responses? Are you sure?&#39;&#39;//&lt;div class=&quot;smallest-font&quot;&gt;{
 (if: $theme is &quot;light-mode&quot; or $FontSetting is &quot;font-smaller&quot;)[(You&#39;ll need to re-enable] 
 
 (if: $theme is &quot;light-mode&quot;)[Light Mode] 
@@ -594,7 +625,7 @@ Those who may have been in limited contact with a potential case of COVID-19 or 
 
 (if: $theme is &quot;light-mode&quot; or $FontSetting is &quot;font-smaller&quot;)[after it resets.)]&lt;/div&gt;
 }(button:)[[Reset Responses-&gt;Auto Reset]]
-(button:)(link-undo:&quot;Go Back to the Previous Screen&quot;)</tw-passagedata><tw-passagedata pid="26" name="Auto Reset" tags="no-header no-footer" position="1030,2839.5" size="100,100">(reload:)resetting</tw-passagedata><tw-passagedata pid="27" name="Fake First Passage" tags="startup" position="969,59" size="100,100">(set: $themes to &quot;dark-mode light-mode&quot;)(set: $theme to &quot;dark-mode&quot;)
+(button:)(link-undo:&quot;Go Back to the Previous Screen&quot;)</tw-passagedata><tw-passagedata pid="26" name="Auto Reset" tags="no-header no-footer" position="1030,2839.5" size="100,100">(reload:)resetting</tw-passagedata><tw-passagedata pid="27" name="Fake First Passage" tags="startup" position="970,52" size="100,100">(set: $themes to &quot;dark-mode light-mode&quot;)(set: $theme to &quot;dark-mode&quot;)
 (set: $FontSettings to &quot;font-default font-smaller&quot;)(set: $FontSetting to &quot;font-default&quot;)
 (set: $PfizerBoosterCDC to &quot;5 months&quot;)(set: $PfizerBoosterPSDC to &quot;5 months&quot;)
 (set: $ModernaBoosterCDC to &quot;5 months&quot;)(set: $ModernaBoosterPSDC to &quot;5 months&quot;)
@@ -611,7 +642,7 @@ http://www.portlandswing.org/wp-content/uploads/2021/12/PSDC-Safety-First-PDX.pn
 
 (set: $cough to &quot;null&quot;)
 Oops, please go back and make sure to select either yes or no on all the health screening questions.
-{(live:5s)[(go-to: &quot;Health Screening Intro&quot;)]}</tw-passagedata><tw-passagedata pid="29" name="Health Screening Results" tags="" position="957.5,2277" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Health Screening - &lt;i&gt;Results&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
+{(live:5s)[(go-to: &quot;Health Screening Intro&quot;)]}</tw-passagedata><tw-passagedata pid="29" name="Health Screening Results" tags="" position="957.5,2274" size="100,100">&lt;b&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;Health Screening - &lt;i&gt;Results&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;
 
 (if: $cough is &quot;Yes&quot;)[(set: $coughYes to &quot;* New or worsening cough&quot;)](else-if: $cough is &quot;No&quot; or &quot;__&quot;)[(set: $coughYes to &quot; &quot;)](if: $fever is &quot;Yes&quot;)[(set: $feverYes to &quot;* Current or recent fever&quot;)](else-if: $fever is &quot;No&quot; or &quot;__&quot;)[(set: $feverYes to &quot; &quot;)](if: $breathshortness is &quot;Yes&quot;)[(set: $breathshortnessYes to &quot;* Recent shortness of breath&quot;)](else-if: $breathshortness is &quot;No&quot; or &quot;__&quot;)[(set: $breathshortnessYes to &quot; &quot;)](if: $covidcontact is &quot;Yes&quot;)[(set: $covidcontactYes to &quot;* Contact in the past 14 days with someone with symptoms or diagnosed with COVID-19&quot;)](else-if: $covidcontact is &quot;No&quot; or &quot;__&quot;)[(set: $covidcontactYes to &quot; &quot;)]{
 }(if: $cough is &quot;__&quot; or $fever is &quot;__&quot; or $breathshortness is &quot;__&quot; or $covidcontact is &quot;__&quot;)[Oops, you didn&#39;t answer all of the questions.
@@ -632,9 +663,9 @@ Proceed to learn more.
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
 &lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://sharedsystems.dhsoha.state.or.us/DHSForms/Served/le2388B.pdf&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority - Quarantine Guide&lt;/a&gt;&lt;br&gt;&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://govstatus.egov.com/or-oha-covid-19-testing&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority - Testing in Oregon&lt;/a&gt;&lt;br&gt;&lt;/span&gt;]{
-}(else-if: $cough is &quot;No&quot; and $fever is &quot;No&quot; and $breathshortness is &quot;No&quot; and $covidcontact is &quot;No&quot;)[You marked &quot;no&quot; on all $ScreeningQuestionNumber screening questions, indicating that you don&#39;t have the 3 common screening symptoms or recent contact with a known or suspected case of COVID-19.
+}(else-if: $cough is &quot;No&quot; and $fever is &quot;No&quot; and $breathshortness is &quot;No&quot; and $covidcontact is &quot;No&quot;)[You marked &quot;no&quot; on all $ScreeningQuestionNumber screening questions, indicating that you don&#39;t have the 3 common screening symptoms or recent contact with a known or suspected case of COVID-19.&lt;br&gt;&lt;br&gt;&#39;&#39;Please continue with the self-screening -- you&#39;re almost done!&#39;&#39;
 
-We will briefly ask you the $ScreeningQuestionNumber health screening questions again at check-in, and for you to mark the appropriate box on the check-in/contact tracing sheet. 
+When you arrive at the dance, we will briefly ask you the $ScreeningQuestionNumber health screening questions again, and for you to mark the appropriate box on the check-in/contact tracing sheet. 
 
 We will also need your current contact information in the event that we are alerted of a COVID-19 case in connection with our dance.
 
@@ -646,7 +677,7 @@ You answered:
 
 When did you complete your Pfizer initial vaccination series?
 (button:)[[Less than 2 weeks ago-&gt;Less than 2 weeks]]
-(button:)[[Between 2 weeks and $PfizerBoosterCDC ago-&gt;Vaccination Conclusion]]
+(button:)[[2 weeks to $PfizerBoosterCDC ago-&gt;Vaccination Conclusion]]
 (button:)[[More than $PfizerBoosterCDC ago-&gt;Pfizer More Than _ Months]]
 
 &lt;hr&gt;
@@ -726,7 +757,7 @@ You answered:
 
 When did you complete your Moderna initial vaccination series?
 (button:)[[Less than 2 weeks ago-&gt;Less than 2 weeks]]
-(button:)[[Between 2 weeks and $ModernaBoosterCDC ago-&gt;Vaccination Conclusion]]
+(button:)[[2 weeks to $ModernaBoosterCDC ago-&gt;Vaccination Conclusion]]
 (button:)[[More than $ModernaBoosterCDC ago-&gt;Moderna More Than _ Months]]
 
 &lt;hr&gt;
@@ -777,7 +808,7 @@ Experts recommend waiting at least 2 weeks before considering yourself to have d
 
 &lt;hr&gt;
 //&#39;&#39;Resources:&#39;&#39;//
-(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="41" name="Apply Theme" tags="" position="838,122.5" size="100,100">(print: &quot;&lt;script&gt;$(&#39;html&#39;).removeClass(&#39;&quot; + $themes + &quot;&#39;).addClass(&#39;&quot; + $theme + &quot;&#39;)&lt;/script&gt;&quot;)</tw-passagedata><tw-passagedata pid="42" name="Booster Resources" tags="" position="445.5,677.5" size="100,100">&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/booster-shot.html&quot; target=&quot;_blank&quot;&gt;CDC - Booster Shots&lt;/a&gt;&lt;/span&gt;
+(display: &quot;Booster Resources&quot;)</tw-passagedata><tw-passagedata pid="41" name="Apply Theme" tags="" position="841,89.5" size="100,100">(print: &quot;&lt;script&gt;$(&#39;html&#39;).removeClass(&#39;&quot; + $themes + &quot;&#39;).addClass(&#39;&quot; + $theme + &quot;&#39;)&lt;/script&gt;&quot;)</tw-passagedata><tw-passagedata pid="42" name="Booster Resources" tags="" position="445.5,677.5" size="100,100">&lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://www.cdc.gov/coronavirus/2019-ncov/vaccines/booster-shot.html&quot; target=&quot;_blank&quot;&gt;CDC - Booster Shots&lt;/a&gt;&lt;/span&gt;
 &lt;span class=&quot;resources&quot;&gt;&lt;a href=&quot;https://govstatus.egov.com/or-oha-booster-covid-19-vaccine&quot; target=&quot;_blank&quot;&gt;Oregon Health Authority - Boosters &amp; Third Doses&lt;/a&gt;&lt;/span&gt;</tw-passagedata><tw-passagedata pid="43" name="End" tags="" position="889.5,2641" size="100,100">&lt;img src=http://www.portlandswing.org/wp-content/uploads/2021/12/PSDC-Safety-First.png class=&quot;center-logo&quot;&gt;
 
 //&#39;&#39;You’re all done!&#39;&#39;//
@@ -788,15 +819,21 @@ Thank you so much for taking the time to review the PSDC health and safety guide
 &lt;div class=&quot;bullet-space&quot;&gt;
 * Vaccination Card
 * High Quality Masks
+* Hand Sanitizer
 * Water/Water Bottle
-* Snacks
-* Hand Sanitizer&lt;/div&gt;&lt;/div&gt;
+* Snacks&lt;/div&gt;&lt;/div&gt;
 }
 &lt;div class=&quot;center-this&quot;&gt;&lt;span style=&quot;font-size: 150%&quot;&gt;&#39;&#39;See you at the dance!&#39;&#39;&lt;/span&gt;
 
 //&lt;div class=&quot;smallest-font&quot;&gt;Use the Reset button here or at the top of the page to reset your responses for the next dance.&lt;/div&gt;//
 
-(button:)[[Reset-&gt;Reset Page]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Apply Font" tags="" position="1102,122.5" size="100,100">(print: &quot;&lt;script&gt;$(&#39;html&#39;).removeClass(&#39;&quot; + $FontSettings + &quot;&#39;).addClass(&#39;&quot; + $FontSetting + &quot;&#39;)&lt;/script&gt;&quot;)</tw-passagedata></tw-storydata>
+(button:)[[Reset-&gt;Reset Page]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="44" name="Apply Font" tags="" position="1100,87.5" size="100,100">(print: &quot;&lt;script&gt;$(&#39;html&#39;).removeClass(&#39;&quot; + $FontSettings + &quot;&#39;).addClass(&#39;&quot; + $FontSetting + &quot;&#39;)&lt;/script&gt;&quot;)</tw-passagedata><tw-passagedata pid="45" name="Vaccination Icon" tags="" position="516.5,345.5" size="100,100">{(if: $theme is &quot;dark-mode&quot; and $FontSetting is &quot;font-default&quot;)[&lt;img src=&quot;https://drive.google.com/uc?export=download&amp;id=16dgGRu7BUWmvHQn3kNtIhgEHSq2PXsTV&quot; class=&quot;icon-img&quot; alt=&quot;white vaccine icon&quot; height=&quot;40&quot; width=auto&gt;]
+(else-if: $theme is &quot;light-mode&quot; and $FontSetting is &quot;font-default&quot;)[&lt;img src=&quot;https://drive.google.com/uc?export=download&amp;id=16dgGRu7BUWmvHQn3kNtIhgEHSq2PXsTV&quot; class=&quot;icon-img&quot; alt=&quot;black vaccine icon&quot; height=&quot;40&quot; width=auto&gt;]
+(else-if: $theme is &quot;dark-mode&quot; and $FontSetting is &quot;font-smaller&quot;)[&lt;img src=&quot;https://drive.google.com/uc?export=download&amp;id=16dgGRu7BUWmvHQn3kNtIhgEHSq2PXsTV&quot; class=&quot;icon-img&quot; alt=&quot;white vaccine icon&quot; height=&quot;34&quot; width=auto&gt;]
+(else-if: $theme is &quot;light-mode&quot; and $FontSetting is &quot;font-smaller&quot;)[&lt;img src=&quot;https://drive.google.com/uc?export=download&amp;id=16dgGRu7BUWmvHQn3kNtIhgEHSq2PXsTV&quot; class=&quot;icon-img&quot; alt=&quot;black vaccine icon&quot; height=&quot;34&quot; width=auto&gt;]}</tw-passagedata><tw-passagedata pid="46" name="Mask Icon" tags="" position="631,346" size="100,100">{(if: $theme is &quot;dark-mode&quot; and $FontSetting is &quot;font-default&quot;)[&lt;img src=&quot;https://drive.google.com/uc?export=download&amp;id=1-8h1UseTLw8E8jj6IaPcAGH82s24G9rr&quot; class=&quot;icon-img&quot; alt=&quot;white mask icon&quot; height=&quot;40&quot; width=auto&gt;]
+(else-if: $theme is &quot;light-mode&quot; and $FontSetting is &quot;font-default&quot;)[&lt;img src=&quot;https://drive.google.com/uc?export=download&amp;id=1SUILFmKlpPcgWkzs2UUbBkG6ZxhY0Ms2&quot; class=&quot;icon-img&quot; alt=&quot;black mask icon&quot; height=&quot;40&quot; width=auto&gt;]
+(else-if: $theme is &quot;dark-mode&quot; and $FontSetting is &quot;font-smaller&quot;)[&lt;img src=&quot;https://drive.google.com/uc?export=download&amp;id=1-8h1UseTLw8E8jj6IaPcAGH82s24G9rr&quot; class=&quot;icon-img&quot; alt=&quot;white mask icon&quot; height=&quot;34&quot; width=auto&gt;]
+(else-if: $theme is &quot;light-mode&quot; and $FontSetting is &quot;font-smaller&quot;)[&lt;img src=&quot;https://drive.google.com/uc?export=download&amp;id=1SUILFmKlpPcgWkzs2UUbBkG6ZxhY0Ms2&quot; class=&quot;icon-img&quot; alt=&quot;black mask icon&quot; height=&quot;34&quot; width=auto&gt;]}</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
